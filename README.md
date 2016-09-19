@@ -57,7 +57,7 @@ In the above figure, the green section is just the available value after corrupt
 
 ![](./figure/05.PNG)
 
-Above figure demonstrates the chunkX condition after corruption. Contrasting corruption before, there are only three DWORDs modified, they are 1FE9218,1FE9220 and 1FE9228. The 1FE9218 is the size of two chunks combined. The 1FE9228 is the free list' FD, and the 1FE9220 is the BK.
+Above figure demonstrates the chunkX condition after corrupted. Contrasting corruption before, there are only three DWORDs modified, they are 1FE9218, 1FE9220 and 1FE9228. The 1FE9218 is the size of two chunks combined. The 1FE9228 is the free list's FD, and the 1FE9220 is the BK.
 
 The address 1FE9200 is the chunk0, 1FE9300 is chunk1, and 1FE9200 is the fake chunkX. Releasing chunk1 causes an unlink action about chunkX.
 
